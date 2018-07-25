@@ -90,3 +90,11 @@ def find_correction_angle(binary_image):
     correction_angle = round(math.degrees(math.atan(1 / slope)))
 
     return correction_angle
+
+def main():
+    print(find_correction_angle("rotated.csv"))
+    print(find_correction_angle("test0.csv"))
+    print(find_correction_angle("test.csv"))
+
+if __name__ == '__main__':
+    main()
